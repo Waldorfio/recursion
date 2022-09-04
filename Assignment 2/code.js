@@ -6,29 +6,18 @@ newArr = [];
 function mergeSort(arr) {
 
     // Base Case
+    if (arr[0] > arr[-1]) {
+        console.log('done: '+newArr);
+        return
+    }
     
+    mid = Math.ceil(arr.length/2);
 
-    // Split
-    if (arr.length > 2) {
+    mergeSort(arr.slice(0, mid));
+    mergeSort(arr.slice(mid+1, arr.length));
 
-    }
+    // Merge
 
-    //
-    if (arr.length == 2) {
-        if (arr[0] > arr[1]) {
-            max = arr[0];
-            min = arr[1];
-        } else if (arr[0] < arr[1]) {
-            max = arr[1];
-            min = arr[0];
-        }
-        newArr.push(min);
-        newArr.push(max);
-    }
-    //
-    if (arr.length == 1) {
-        newArr.push(arr);
-    }
 
 
 
