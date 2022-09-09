@@ -1,2 +1,3 @@
 # Recursion Practice
-Practicing Recursion by creating a Fibonacci sequence function, and a Sorting algorithm.
+Recursion practice through the creation of a Fibonacci algorithm, 
+and the infamous "merge-sort" algorithm in JavaScript.
